@@ -1,0 +1,31 @@
+<statemachine>
+	<currentstate>on</currentstate>
+	<state>
+		<name>on</name>
+		<transitions>
+			<transition>
+				<eventname>e1</eventname>
+				<statename>off</statename>
+			</transition>
+			<transition>
+				<eventname>e2</eventname>
+				<statename>off</statename>
+			</transition>
+		</transitions>
+	</state>
+	<state>
+		<name>off</name>
+		<transitions>
+			<transition>
+				<eventname>e2</eventname>
+				<statename>on</statename>
+			</transition>
+		</transitions>
+	</state>
+	<event>
+		<name>e1</name>
+	</event>
+	<event>
+		<name>e2</name>
+	</event>
+</statemachine>
